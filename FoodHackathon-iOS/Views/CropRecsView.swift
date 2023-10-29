@@ -10,7 +10,7 @@ import SwiftUI
 struct CropRecsView: View {
     @EnvironmentObject var vm: HomeViewModel
     
-    @State var sentSMS: Bool = false
+//    @State var sentSMS: Bool = false
 
     var body: some View {
         VStack {
@@ -90,7 +90,6 @@ struct CropRecsView: View {
                     Group {
                         Button {
                             vm.sendSMS()
-                            self.sentSMS = true
                         } label: {
                             Text("Send SMS Notification")
                                 .bold()
@@ -101,8 +100,8 @@ struct CropRecsView: View {
                                 .clipShape(.rect(cornerRadius: 16))
                                 .padding(.horizontal)
                         }
-                        .opacity(!sentSMS ? 1 : 0.25)
-                        .disabled(sentSMS)
+                        .opacity(!vm.sentSMS ? 1 : 0.25)
+                        .disabled(vm.sentSMS)
 
                     }
                 }

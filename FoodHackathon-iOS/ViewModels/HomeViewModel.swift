@@ -17,6 +17,8 @@ class HomeViewModel: ObservableObject {
     @Published var gotData: Bool = false
     @Published var cropRecs: CropRecs = CropRecs(name: "", pests: [], extremeWeatherConditions: "")
     
+    @Published var sentSMS: Bool = false
+    
     let baseURL: String = "https://goldfish-app-o3qh7.ondigitalocean.app"
 
     @Published var errorMessage: String?
@@ -55,9 +57,15 @@ class HomeViewModel: ObservableObject {
             }
             .store(in: &cancellables)
         
+        // waits 15 seconds after sending SMS
+        $sentSMS
+            .debounce(for: .seconds(15), scheduler: RunLoop.main)
+            .sink { _ in
+                self.sentSMS = false
+            }
+            .store(in: &cancellables)
     }
     
-    // TODO - do
     // get crop recs from api
     func getCropRecs() {
         print("Getting crop recs..")
@@ -97,6 +105,8 @@ class HomeViewModel: ObservableObject {
     }
     
     func sendSMS() {
+        self.sentSMS = true
+        
         guard let phoneNumber = userModel?.phoneNumber else {
             print("No phone number")
             return

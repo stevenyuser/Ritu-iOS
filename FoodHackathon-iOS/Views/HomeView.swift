@@ -43,9 +43,6 @@ struct HomeView: View {
                         vm.getCropRecs()
                     } label: {
                         Image(systemName: "arrow.clockwise.circle.fill")
-//                            .font(.system(size:20))
-//                            .frame(width: 25, height: 25)
-                            .padding(5)
                     }
                 }
             }
