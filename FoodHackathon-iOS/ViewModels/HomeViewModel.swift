@@ -59,7 +59,7 @@ class HomeViewModel: ObservableObject {
         
         // waits 15 seconds after sending SMS
         $sentSMS
-            .debounce(for: .seconds(15), scheduler: RunLoop.main)
+            .debounce(for: .seconds(3), scheduler: RunLoop.main)
             .sink { _ in
                 self.sentSMS = false
             }
