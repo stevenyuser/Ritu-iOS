@@ -60,6 +60,9 @@ class HomeViewModel: ObservableObject {
     // TODO - do
     // get crop recs from api
     func getCropRecs() {
+        print("Getting crop recs..")
+        gotData = false
+        
         guard let phoneNumber = userModel?.phoneNumber else {
             print("No phone number")
             return
@@ -67,7 +70,7 @@ class HomeViewModel: ObservableObject {
         
         let parameters: [String: String] = [
             "phone_number": phoneNumber,
-            "user_id": userModel?.userId ?? "bruh"
+            "user_id": userModel?.userId ?? "bruh" // optional, might not be used
         ]
         
         AF.request(baseURL + "/get_crop_recs", method: .post, parameters: parameters, encoding: JSONEncoding.default)
@@ -79,6 +82,8 @@ class HomeViewModel: ObservableObject {
             })
             .responseDecodable(of: GetCropRecsResponse.self) { response in
                 debugPrint("response: \(response.description)")
+                self.cropRecs = response.value?.cropRecs ?? CropRecs(name: "", pests: [], extremeWeatherConditions: "")
+                self.gotData = true
             }
     }
     
