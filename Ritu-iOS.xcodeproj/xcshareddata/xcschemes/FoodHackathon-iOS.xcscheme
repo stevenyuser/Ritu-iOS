@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C09F0B8E2AE479FB00DB4239"
-               BuildableName = "FoodHackathon-iOS.app"
-               BlueprintName = "FoodHackathon-iOS"
-               ReferencedContainer = "container:FoodHackathon-iOS.xcodeproj">
+               BuildableName = "Ritu-iOS.app"
+               BlueprintName = "Ritu-iOS"
+               ReferencedContainer = "container:Ritu-iOS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -44,9 +44,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C09F0B8E2AE479FB00DB4239"
-            BuildableName = "FoodHackathon-iOS.app"
-            BlueprintName = "FoodHackathon-iOS"
-            ReferencedContainer = "container:FoodHackathon-iOS.xcodeproj">
+            BuildableName = "Ritu-iOS.app"
+            BlueprintName = "Ritu-iOS"
+            ReferencedContainer = "container:Ritu-iOS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -61,9 +61,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C09F0B8E2AE479FB00DB4239"
-            BuildableName = "FoodHackathon-iOS.app"
-            BlueprintName = "FoodHackathon-iOS"
-            ReferencedContainer = "container:FoodHackathon-iOS.xcodeproj">
+            BuildableName = "Ritu-iOS.app"
+            BlueprintName = "Ritu-iOS"
+            ReferencedContainer = "container:Ritu-iOS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

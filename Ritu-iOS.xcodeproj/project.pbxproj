@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C022FC642AE5154A00C18BC1 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = C022FC632AE5154A00C18BC1 /* Response.swift */; };
 		C071CDD02AE4E49F0054838B /* ButtonViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071CDCF2AE4E49F0054838B /* ButtonViewModifier.swift */; };
-		C074A4812AE553530040698A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C09F0BDD2AE47DD600DB4239 /* GoogleService-Info.plist */; };
 		C074A4832AE553990040698A /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C074A4822AE553990040698A /* Resolver.swift */; };
 		C09F0B932AE479FB00DB4239 /* FoodHackathon_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09F0B922AE479FB00DB4239 /* FoodHackathon_iOSApp.swift */; };
 		C09F0B952AE479FB00DB4239 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09F0B942AE479FB00DB4239 /* ContentView.swift */; };
@@ -68,13 +67,11 @@
 		C022FC632AE5154A00C18BC1 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		C071CDCF2AE4E49F0054838B /* ButtonViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewModifier.swift; sourceTree = "<group>"; };
 		C074A4822AE553990040698A /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
-		C09F0B8F2AE479FB00DB4239 /* FoodHackathon-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FoodHackathon-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C09F0B8F2AE479FB00DB4239 /* Ritu-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ritu-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C09F0B922AE479FB00DB4239 /* FoodHackathon_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodHackathon_iOSApp.swift; sourceTree = "<group>"; };
 		C09F0B942AE479FB00DB4239 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C09F0B962AE479FC00DB4239 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C09F0B992AE479FC00DB4239 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		C09F0BD72AE47BFF00DB4239 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		C09F0BDD2AE47DD600DB4239 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C09F0BE02AE47E5000DB4239 /* RouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterView.swift; sourceTree = "<group>"; };
 		C09F0BE22AE47E9D00DB4239 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		C09F0BE42AE47F1100DB4239 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
@@ -146,7 +143,7 @@
 		C09F0B902AE479FB00DB4239 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C09F0B8F2AE479FB00DB4239 /* FoodHackathon-iOS.app */,
+				C09F0B8F2AE479FB00DB4239 /* Ritu-iOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,7 +151,6 @@
 		C09F0B912AE479FB00DB4239 /* FoodHackathon-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				C074A4822AE553990040698A /* Resolver.swift */,
 				C09F0C042AE4B6F700DB4239 /* Extensions */,
 				C09F0B922AE479FB00DB4239 /* FoodHackathon_iOSApp.swift */,
 				C09F0BE02AE47E5000DB4239 /* RouterView.swift */,
@@ -163,10 +159,8 @@
 				C09F0BDA2AE47DA200DB4239 /* Views */,
 				C09F0BDB2AE47DA800DB4239 /* ViewModels */,
 				C09F0BD92AE47D9600DB4239 /* Services */,
-				C09F0BD72AE47BFF00DB4239 /* GoogleService-Info.plist */,
 				C09F0B942AE479FB00DB4239 /* ContentView.swift */,
 				C09F0B962AE479FC00DB4239 /* Assets.xcassets */,
-				C09F0BDD2AE47DD600DB4239 /* GoogleService-Info.plist */,
 				C09F0B982AE479FC00DB4239 /* Preview Content */,
 			);
 			path = "FoodHackathon-iOS";
@@ -236,6 +230,7 @@
 		C09F0C042AE4B6F700DB4239 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C074A4822AE553990040698A /* Resolver.swift */,
 				C09F0C052AE4B71400DB4239 /* App+Injection.swift */,
 				C071CDCF2AE4E49F0054838B /* ButtonViewModifier.swift */,
 			);
@@ -245,9 +240,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C09F0B8E2AE479FB00DB4239 /* FoodHackathon-iOS */ = {
+		C09F0B8E2AE479FB00DB4239 /* Ritu-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C09F0B9D2AE479FC00DB4239 /* Build configuration list for PBXNativeTarget "FoodHackathon-iOS" */;
+			buildConfigurationList = C09F0B9D2AE479FC00DB4239 /* Build configuration list for PBXNativeTarget "Ritu-iOS" */;
 			buildPhases = (
 				C09F0B8B2AE479FB00DB4239 /* Sources */,
 				C09F0B8C2AE479FB00DB4239 /* Frameworks */,
@@ -257,7 +252,7 @@
 			);
 			dependencies = (
 			);
-			name = "FoodHackathon-iOS";
+			name = "Ritu-iOS";
 			packageProductDependencies = (
 				C09F0BA12AE47A8D00DB4239 /* FirebaseAnalytics */,
 				C09F0BA32AE47A8D00DB4239 /* FirebaseAnalyticsOnDeviceConversion */,
@@ -289,7 +284,7 @@
 				C0CC32FD2AE54ED500E52CAE /* Alamofire */,
 			);
 			productName = "FoodHackathon-iOS";
-			productReference = C09F0B8F2AE479FB00DB4239 /* FoodHackathon-iOS.app */;
+			productReference = C09F0B8F2AE479FB00DB4239 /* Ritu-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -307,7 +302,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C09F0B8A2AE479FB00DB4239 /* Build configuration list for PBXProject "FoodHackathon-iOS" */;
+			buildConfigurationList = C09F0B8A2AE479FB00DB4239 /* Build configuration list for PBXProject "Ritu-iOS" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -324,7 +319,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C09F0B8E2AE479FB00DB4239 /* FoodHackathon-iOS */,
+				C09F0B8E2AE479FB00DB4239 /* Ritu-iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -334,7 +329,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C074A4812AE553530040698A /* GoogleService-Info.plist in Resources */,
 				C09F0B9A2AE479FC00DB4239 /* Preview Assets.xcassets in Resources */,
 				C09F0B972AE479FC00DB4239 /* Assets.xcassets in Resources */,
 			);
@@ -519,7 +513,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.stevenyuser.FoodHackathon-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stevenyuser.Ritu-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -550,7 +544,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.stevenyuser.FoodHackathon-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stevenyuser.Ritu-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -561,7 +555,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C09F0B8A2AE479FB00DB4239 /* Build configuration list for PBXProject "FoodHackathon-iOS" */ = {
+		C09F0B8A2AE479FB00DB4239 /* Build configuration list for PBXProject "Ritu-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C09F0B9B2AE479FC00DB4239 /* Debug */,
@@ -570,7 +564,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C09F0B9D2AE479FC00DB4239 /* Build configuration list for PBXNativeTarget "FoodHackathon-iOS" */ = {
+		C09F0B9D2AE479FC00DB4239 /* Build configuration list for PBXNativeTarget "Ritu-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C09F0B9E2AE479FC00DB4239 /* Debug */,
